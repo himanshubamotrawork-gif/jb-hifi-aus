@@ -28,7 +28,7 @@ padding-bottom:30px;
 box-shadow: 0 0 20px rgba(0,0,0,.05);
 }
 
-/* HEADER - CENTERED ALIGNMENT */
+/* HEADER - CENTERED ALIGNMENT WITH STYLIZED LOGO */
 .topbar{
 background:#ffffff;
 padding:14px 16px;
@@ -38,11 +38,20 @@ justify-content:center;
 border-bottom:1px solid #e5e7eb;
 }
 
-.brand{
-font-size:24px;
-font-weight:800;
-letter-spacing:-0.5px;
-color:#FFCC00; /* CHANGED TO YELLOW */
+/* OFFICIAL JB HI-FI BADGE RECREATION */
+.jbhifi-logo {
+background: #FFCC00;
+color: #000000;
+font-family: 'Arial Black', 'Impact', 'Inter', sans-serif;
+font-weight: 900;
+font-size: 22px;
+padding: 4px 18px;
+border-radius: 50% / 12%; /* Emulates the classic flat oval badge look */
+text-transform: uppercase;
+letter-spacing: -1px;
+transform: rotate(-3deg); /* Slight angle characteristic of their design */
+box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
+display: inline-block;
 }
 
 /* MAIN TITLE STYLING */
@@ -53,11 +62,11 @@ font-weight:800;
 letter-spacing:-2px;
 text-align:center;
 padding:34px 18px 20px;
-color:#FFCC00; /* CHANGED ENTIRE CONTAINER TO YELLOW BY DEFAULT */
+color:#FFCC00;
 }
 
 .dark-text {
-color:#111111; /* Kept for any default secondary title parts if needed */
+color:#111111;
 }
 
 /* STEP CARDS & FAQ CARDS */
@@ -191,7 +200,8 @@ font-weight: 500;
 <div class="main-card">
 
 <div class="topbar">
-<div class="brand">JB Hi-Fi</div>
+<!-- REPLACED NAME TEXT WITH ACCURATE CSS BRAND LOGO BADGE -->
+<div class="jbhifi-logo">JB HI-FI</div>
 </div>
 
 <div class="hero-title">
