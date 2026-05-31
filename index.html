@@ -46,23 +46,25 @@ font-family: 'Arial Black', 'Impact', 'Inter', sans-serif;
 font-weight: 900;
 font-size: 22px;
 padding: 4px 18px;
-border-radius: 50% / 12%; /* Emulates the classic flat oval badge look */
+border-radius: 50% / 12%;
 text-transform: uppercase;
 letter-spacing: -1px;
-transform: rotate(-3deg); /* Slight angle characteristic of their design */
+transform: rotate(-3deg);
 box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
 display: inline-block;
 }
 
-/* MAIN TITLE STYLING */
+/* MAIN TITLE STYLING WITH BLACK OUTLINE */
 .hero-title{
 font-size:38px;
 line-height:1.05;
 font-weight:800;
-letter-spacing:-2px;
+letter-spacing:-1px;
 text-align:center;
 padding:34px 18px 20px;
 color:#FFCC00;
+-webkit-text-stroke: 1.5px #000000; /* Adds the black outline to the yellow text */
+text-stroke: 1.5px #000000;
 }
 
 .dark-text {
@@ -200,7 +202,6 @@ font-weight: 500;
 <div class="main-card">
 
 <div class="topbar">
-<!-- REPLACED NAME TEXT WITH ACCURATE CSS BRAND LOGO BADGE -->
 <div class="jbhifi-logo">JB HI-FI</div>
 </div>
 
