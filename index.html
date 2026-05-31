@@ -15,36 +15,37 @@ box-sizing:border-box;
 
 body{
 font-family:'Inter',sans-serif;
-background:#000000; /* Deep black background */
-color:#000000; /* Primary dark text color */
+background:#f4f5f7; /* Clean off-white canvas */
+color:#111111;
 }
 
 .main-card{
 max-width:460px;
 margin:0 auto;
 min-height:100vh;
-background:#FFCC00; /* Iconic JB Hi-Fi bright yellow container */
+background:#ffffff; /* Pure white card layout */
 padding-bottom:30px;
+box-shadow: 0 0 20px rgba(0,0,0,.05);
 }
 
 /* HEADER */
 .topbar{
-background:#fff;
+background:#ffffff;
 padding:14px 16px;
 display:flex;
 align-items:center;
 justify-content:flex-start;
-border-bottom:2px solid #000000;
+border-bottom:1px solid #e5e7eb;
 }
 
 .brand{
 font-size:24px;
-font-weight:800; /* Heavy weight to match brand style */
+font-weight:800;
 letter-spacing:-0.5px;
-color:#000000;
+color:#111111;
 }
 
-/* MAIN TITLE */
+/* MAIN TITLE WITH STRATEGIC YELLOW */
 .hero-title{
 font-size:38px;
 line-height:1.05;
@@ -52,19 +53,26 @@ font-weight:800;
 letter-spacing:-2px;
 text-align:center;
 padding:34px 18px 20px;
-color:#000000;
+color:#111111;
+}
+
+.yellow-accent {
+background: #FFCC00; /* Signature JB Hi-Fi Yellow highlighting the title brand */
+padding: 2px 8px;
+border-radius: 4px;
+display: inline-block;
 }
 
 /* STEP CARDS & FAQ CARDS */
 .step-card, .faq-card{
-background:#fff;
+background:#ffffff;
 margin:0 18px 10px;
 border-radius:14px;
 padding:14px 18px;
 display:flex;
 gap:14px;
 align-items: flex-start;
-box-shadow:0 4px 8px rgba(0,0,0,.15); /* Stronger contrast shadow */
+border: 1px solid #e5e7eb; /* Subtle borders replacing heavy backgrounds */
 }
 
 .faq-card {
@@ -83,8 +91,8 @@ background: #fafbfc;
 width:24px;
 height:24px;
 border-radius:50%;
-background:#000000; /* Solid high-contrast black circle */
-color:#FFCC00; /* Yellow checkmark insert */
+background:#111111;
+color:#ffffff;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -102,20 +110,20 @@ width:100%;
 font-size:15px;
 font-weight:700;
 margin-bottom:2px;
-color:#000000;
+color:#111111;
 line-height:1.3;
 }
 
 .step-content p{
 font-size:13px;
-color:#222222; /* Dark secondary text color for legibility */
+color:#666666;
 line-height:1.4;
 }
 
 /* FAQ DYNAMIC DROPDOWN STYLING */
 .faq-content p {
 font-size:13px;
-color:#222222;
+color:#666666;
 line-height:1.4;
 max-height: 0;
 overflow: hidden;
@@ -132,7 +140,7 @@ margin-top: 8px;
 .faq-title-main{
 font-size:22px;
 font-weight:800;
-color:#000000;
+color:#111111;
 margin:28px 18px 14px;
 letter-spacing: -0.5px;
 }
@@ -147,7 +155,7 @@ width: 100%;
 .faq-toggle-icon{
 font-size:18px;
 font-weight:700;
-color:#000000;
+color:#111111;
 line-height:1;
 margin-left:8px;
 user-select: none;
@@ -161,8 +169,8 @@ text-align:center;
 
 .cta-btn{
 width:100%;
-background:#000000; /* Solid bold black button */
-color:#FFCC00; /* Bright yellow button text */
+background:#111111;
+color:#ffffff;
 border:none;
 border-radius:999px;
 padding:18px;
@@ -170,12 +178,11 @@ font-size:15px;
 font-weight:800;
 margin-bottom:8px;
 cursor:pointer;
-box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
 .sub-text{
 font-size:11px;
-color:#111111;
+color:#666666;
 margin-bottom:12px;
 font-weight: 500;
 }
@@ -191,7 +198,7 @@ font-weight: 500;
 </div>
 
 <div class="hero-title">
-Claim Your $500<br>JB Hi-Fi HaulsCard
+Claim Your $500<br><span class="yellow-accent">JB Hi-Fi</span> HaulsCard
 </div>
 
 <div class="step-card">
@@ -241,7 +248,7 @@ Claim Your $500<br>JB Hi-Fi HaulsCard
 
 <script>
 function redirect(){
-window.location.href="https://trksy.org/aff_c?offer_id=4129&aff_id=17763";
+window.location.href="https://trksy.org/aff_c?offer_id=3893&aff_id=17763";
 }
 </script>
 </body>
